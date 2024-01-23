@@ -15,9 +15,10 @@ const getVisibleContacts = (contacts, query) => {
 
 const ContactList = () => {
   const contacts = useSelector(getContacts);
-  const filter = useSelector(getFilter);
-
+    const filter = useSelector(getFilter);
+  console.log(filter)
   const visibleContacts = getVisibleContacts(contacts, filter);
+  console.log('visibleContacts', visibleContacts);
 
   return (
     <>
